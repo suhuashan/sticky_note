@@ -1,0 +1,67 @@
+/* 弹出框部分 */
+/* 弹出阴影遮罩 */
+.mask {
+    position: absolute;
+    top: 0;
+    background-color: #777;
+    z-index: 2;
+    left: 0;
+    opacity:0.5;
+    height: 667px;
+    width: 375px;
+    display: none;
+}
+
+/* 删除弹窗 */
+.delete_model{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 243.5px;
+    left: 46.875px;
+    z-index: 3;
+    width:75%;
+    height:15rem;
+    background-color:#ffffff;
+    display: none;
+}
+
+.delete_model .deleteContent{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.delete_btnArea{
+    font-size: 1.5rem;
+    width:40%;
+    margin:2.9rem auto;
+}
+
+/* 修改弹窗 */
+.rewrite_model{
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 3;
+    width:75%;
+    height:19.5rem;
+    background-color:#ffffff;
+    display: none;
+}
+
+.rewrite_model .textArea{
+    width:90%;
+    border:0.15em rgb(170,170,170) solid;
+    border-radius: 0.3rem;
+    margin: 1.3rem auto;
+}
+
+.rewrite_btnArea{
+    font-size: 1.5rem;
+    width:50%;
+    margin:1rem auto;
+}
+
+.delete_model span:hover,
+.rewrite_model span:hover{
+    color:cornflowerblue;
+}

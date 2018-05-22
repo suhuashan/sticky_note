@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0, user-scalable=no">
+    <title>便荔贴</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sub.css">
+</head>
+<body>
+    <!-- 顶部的输入框 -->
+    <div id="header_container">
+        <input
+            type="text"
+            placeholder=" 任务输入完毕后，请按下回车键"
+            autocomplete="off"
+            autofocus=""
+            id="todoInput">
+        <div id="hint">此字段必须填写！</div>
+    </div>
+
+    <!-- 中间展示区 -->
+    <div id="function_container">
+        <!-- 等待完成List -->
+        <div id="todoList_container">
+            <div class="list_title">
+                <span class="list_title_head  fl"  >等待完成</span>
+                <span class="fl list_item_sum" id="todoList_sum">0</span>
+            </div>
+            <ul id="todoList"></ul>
+        </div>
+        <!-- 已经完成List -->
+        <div id="finishedList_container">
+            <div class="list_title">
+                <span class="list_title_head fl">已经完成</span>
+                <span class="fl list_item_sum" id="finishedList_sum">0</span>
+            </div>
+            <ul id="finishedList"></ul>
+        </div>
+    </div>
+
+    <!-- 底部标注 -->
+    <div id="footer_container" class="cl">
+        <div><button><a href="https://jinshuju.net/f/xUzPxJ" class="footer_button">意见反馈</a></button></div>
+        <div>注：输入的字符'<>&'都会自动转换为"《》'&"</div>
+        <div> 退出微信后所有数据会被清除</div>
+    </div>
+
+    <!-- 点击弹窗 -->
+    <div id="mask" class="mask"></div>
+    <!-- 删除弹窗 -->
+    <div id="delete_model" class="delete_model">
+        <div class="deleteContent">确定删除这项任务吗?</div>
+        <div class="delete_btnArea">
+            <span id="cancelBtn" class="fl">取消</span>
+            <span id="confirmBtn" class="fr">确定</span>
+        </div>
+    </div>
+    <!-- 修改弹窗 -->
+    <div id="rewrite_model" class="rewrite_model">
+        <div class="textArea">
+            <textarea id="textArea"></textarea>
+        </div>
+        <div class="rewrite_btnArea">
+            <span id="cancel_Btn" class="fl">取消</span>
+            <span id="confirm_Btn" class="fr">确认修改</span>
+        </div>
+    </div>
+    <script src="js/vconsole.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

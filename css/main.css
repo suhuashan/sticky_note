@@ -1,0 +1,175 @@
+/* 1.顶部输入框 */
+#header_container{
+    width:90%;
+    height:3rem;
+    padding-top:1rem;
+    margin: 1rem auto;
+}
+
+#header_container input[type=text]{
+    position: relative;
+    width:97%;
+    border:0.1rem rgb(190,190,190) solid;
+    height:3rem;
+    line-height:3rem;
+    padding:0 0.5rem;
+    font-size: 1.3rem;
+    border-radius:0.2rem;
+    outline: 0;
+}
+
+/* 顶部输入框报错弹窗 */
+#hint{
+    display: none;
+    font-size: 1rem;
+    width: 8rem;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.6rem;
+    padding: 0.5rem 0;
+    position: absolute;
+    z-index: 1;
+    top: 5rem;
+    left: 50%;
+    margin-left: -4rem;
+}
+
+#hint::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -0.5rem;
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+/* 2.中间展示区 */
+#function_container{
+    width:88%;
+    margin:0 auto;
+}
+
+#todoList_container,
+#finishedList_container{
+    width:100%;
+    font-size:3rem;
+    margin-top:2rem;
+}
+
+.list_title{
+    height:1.5rem;
+    line-height:1.5rem;
+    margin-bottom: 1rem;
+    font-size:1.5rem;
+}
+
+.list_title_head{
+    color:rgb(100,100,100);
+    font-size:1.5rem;
+    padding-right: 1rem;
+}
+
+.list_item_sum{
+    color:rgb(100,100,100);
+    font-size:1.5rem;
+    padding-right: 1rem;
+}
+
+/* 3.底部标注 */
+#footer_container{
+    width:95%;
+    margin:1rem auto;
+}
+#footer_container button{
+    margin-top: 0.3rem;
+    padding:0.3rem;
+    border-radius:0.2rem;
+    outline:0;
+    border: 0.1rem solid rgb(190,190,190);
+    background-color: #fff;
+}
+
+#footer_container div{
+    margin:0.5rem auto;
+    width:80%;
+    text-align: center;
+    color:rgb(190,190,190);
+}
+
+.footer_button{
+    font-size: 1rem;
+    color: rgb(190,190,190);
+}
+
+
+/* 4.通过JS进行动态输入的HTML */
+li{
+    height:2rem;
+    margin-top:1.1rem;
+    width:100%;
+}
+
+.list_item_style{
+    display: inline-block;
+    border-bottom:rgb(190,190,190) 0.1rem solid;
+    width:93%;
+}
+
+#checkbox{
+    float:left;
+    width:5%;
+    height:1.6rem;
+    margin-top: 0.2rem;
+    margin-right: 0.2rem;
+    border-radius: 0.8rem;
+    border-color:rgb(117, 187, 211);
+}
+
+.todolist_item{
+    display: inline-block;
+    white-space:pre;
+    color: #505050;
+    height:2rem;
+    line-height: 2rem;
+    width:65%;
+    font-size:1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* list_item的时间 */
+#todoTime{
+    display: inline-block;
+    margin-top: 0.3rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    font-size:1.3rem;
+    color:rgb(180, 180, 180);
+}
+
+/* 删除置顶按钮 */
+.deleteBtn,
+.setToTop{
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    font-size:1.3rem;
+}
+img{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left:0.3rem;
+}
+/* 弹出的textarea框 */
+textarea{
+    width:95%;
+    height: 12rem;
+    font-size: 2.2rem;
+    padding:0.5rem 0.5rem;
+    color: #505050;
+}
+
+
+
